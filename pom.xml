@@ -56,22 +56,28 @@
 		  <artifactId>maven-release-plugin</artifactId>
 		  <version>2.5.2</version>
 		</plugin>
-			<plugin>
-	<groupId>org.apache.tomcat.maven</groupId>
-	<artifactId>tomcat7-maven-plugin</artifactId>
-	<version>2.2</version>
-	<configuration>
-		<url>http://localhost:9080/manager/html</url>
-		<server>TomcatServer</server>
-		<path>/myWebApp</path>
-		<username>jenkins</username>
-		<password>jenkins</password>
-	</configuration>
-</plugin>
+			 <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+        <artifactId>tomcat-maven-plugin</artifactId>
+              
+                <configuration>
+                    <server>apache-tomcat-7</server>
+                    <url>http://localhost:9080/manager/text</url>
+                    <path>/${project.artifactId}</path>
+			<username>jenkins</username>
+			<password>jenkins</password>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-war-plugin</artifactId>
+                <version>2.4</version>
+            </plugin>
 		</plugins>
 	</build>
 	  <properties>
             <project.scm.id>git</project.scm.id>
+		  <maven.tomcat.url>http://localhost:9080/manager/text</maven.tomcat.url>
          </properties>
 	  <scm>
 		<url>https://github.com/NagireddyGuduru/client-demo-project</url>
