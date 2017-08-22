@@ -61,7 +61,7 @@
 	<artifactId>tomcat7-maven-plugin</artifactId>
 	<version>2.2</version>
 	<configuration>
-		<url>http://localhost:8080/manager/html</url>
+		<url>http://localhost:9080/manager/html</url>
 		<server>TomcatServer</server>
 		<path>/myWebApp</path>
 		<username>jenkins</username>
@@ -99,18 +99,7 @@
               <testFailureIgnore>true</testFailureIgnore>
             </configuration>
           </plugin>
-		<plugin>
-	<groupId>org.apache.tomcat.maven</groupId>
-	<artifactId>tomcat7-maven-plugin</artifactId>
-	<version>2.2</version>
-	<configuration>
-		<url>http://localhost:9080/manager</url>
-		<server>TomcatServer</server>
-		<path>/myWebApp</path>
-		<username>jenkins</username>
-		<password>jenkins</password>
-	</configuration>
-</plugin>
+		
         </plugins>
       </build>
 
