@@ -1,5 +1,5 @@
 def propeties = new Properties()
-streamFileFromWorkspace('seed.properties').withStream {
+streamFileFromWorkspace('./seed.properties').withStream {
   InputStream it -> properties.load(it)
 }
 job("${SEED_PROJECT}-${SEED_BRANCH}-build") {
