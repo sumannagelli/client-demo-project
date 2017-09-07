@@ -1,4 +1,4 @@
-job(SEED_PROJECT "-" SEED_BRANCH "-build") {
+job(SEED_PROJECT) {
    description "Building the  branch."
   
 }
