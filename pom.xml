@@ -77,6 +77,7 @@
 	</build>
 	  <properties>
             <project.scm.id>git</project.scm.id>
+		   <sonar.host.url>http://localhost:9000/</sonar.host.url>
 		  <maven.tomcat.url>http://localhost:9080/manager/text</maven.tomcat.url>
          </properties>
 	  <scm>
