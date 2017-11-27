@@ -44,7 +44,7 @@
         </snapshotRepository>
     </distributionManagement>
 	<build>
-		<finalName>myweb</finalName>
+		<finalName>myweb-${BUILD_NUMBER}</finalName>
 		<plugins>
 		<plugin>
 			<groupId>org.jacoco</groupId>
