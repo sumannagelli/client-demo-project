@@ -62,7 +62,7 @@
             <version>2.2</version>
 				 <configuration>
                     <server>apache-tomcat-7</server>
-                    <url>http://localhost:9080/manager/text</url>
+                    <url>http://172.20.15.101:8088/manager/text</url>
                     <path>/${project.artifactId}</path>
 			<username>jenkins</username>
 			<password>jenkins</password>
