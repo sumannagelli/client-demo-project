@@ -64,8 +64,8 @@
                     <server>apache-tomcat-7</server>
                     <url>http://172.20.15.101:8088/manager/text</url>
                     <path>/${project.artifactId}</path>
-			<username>jenkins</username>
-			<password>jenkins</password>
+			<username>tomcat</username>
+			<password>tomcat</password>
                 </configuration>
         </plugin>
 			 <plugin>
@@ -94,8 +94,7 @@
 	</build>
 	  <properties>
             <project.scm.id>git</project.scm.id>
-		  
-		  <maven.tomcat.url>http://172.20.15.101:8088/manager/text</maven.tomcat.url>
+	    <maven.tomcat.url>http://172.20.15.101:8088/manager/text</maven.tomcat.url>
          </properties>
 	  <scm>
 		<url>https://github.com/NagireddyGuduru/client-demo-project</url>
