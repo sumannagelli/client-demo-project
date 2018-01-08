@@ -33,13 +33,13 @@
         <repository>
             <id>deployment</id>
             <name>Internal Releases</name>
-            <url>http://localhost:8085/nexus/content/repositories/releases/</url>
+            <url>http://localhost:8087/nexus/content/repositories/releases/</url>
 			<uniqueVersion>false</uniqueVersion>
         </repository>
         <snapshotRepository>
             <id>deployment</id>
             <name>Internal Snapshot Releases</name>
-                     <url>http://localhost:8085/nexus/content/repositories/snapshots/</url>
+                     <url>http://localhost:8087/nexus/content/repositories/snapshots/</url>
 			<uniqueVersion>false</uniqueVersion>
         </snapshotRepository>
     </distributionManagement>
@@ -95,7 +95,7 @@
 	  <properties>
             <project.scm.id>git</project.scm.id>
 		  
-		  <maven.tomcat.url>http://localhost:9080/manager/text</maven.tomcat.url>
+		  <maven.tomcat.url>http://localhost:8088/manager/text</maven.tomcat.url>
          </properties>
 	  <scm>
 		<url>https://github.com/NagireddyGuduru/client-demo-project</url>
