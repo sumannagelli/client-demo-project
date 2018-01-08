@@ -74,10 +74,10 @@
               
                 <configuration>
                     <server>apache-tomcat-7</server>
-                    <url>http://172.20.15.101:9080/manager/text</url>
+                    <url>http://172.20.15.101:8080/manager/text</url>
                     <path>/${project.artifactId}</path>
-			<username>jenkins</username>
-			<password>jenkins</password>
+			<username>tomcat</username>
+			<password>tomcat</password>
                 </configuration>
             </plugin>
             <plugin>
