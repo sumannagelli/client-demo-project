@@ -18,8 +18,8 @@
 --
 -- Table structure for table `account`
 --
-CREATE DATABASE IF NOT EXISTS bnppmtape;
-USE bnppmtape;
+CREATE DATABASE IF NOT EXISTS mydb;
+USE mydb;
 
 DROP TABLE IF EXISTS `account`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
